@@ -346,7 +346,7 @@ const ErrorMessage = ({name}) => {
             <Typography mt={1} component="h3" sx={{fontSize:{sm:"20px", md:"24", lg:"26px" }}} px={2} py={1} borderRadius={1} boxSizing="border-box" backgroundColor="black" color="white" fontWeight={900} className="heading">Estimations</Typography>
             <Box width="100%" sx={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
                 <Typography component="p" lineHeight={0.5} color="#201747" fontSize={{md: 16}}>ROI:</Typography>
-                <Typography className={isBlurred ? "blurr": ""} component="p" lineHeight={0.5} color="#201747" fontSize={{md: 28, xs: 24}}>{`${Math.fround(roi*100)}%`}</Typography>
+                <Typography className={isBlurred ? "blurr": ""} component="p" lineHeight={0.5} color="#201747" fontSize={{md: 28, xs: 24}}>{`${Math.round(roi*100)}%`}</Typography>
             </Box>
             <Box width="100%" sx={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap'}}>
                 <Typography component="p" lineHeight={1} color="#201747" fontSize={{md: 16}}>COST/SF:</Typography>
